@@ -1,106 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-        <div class="container">
-            <h1 class="logo"><a href="#home">MyPortfolio</a></h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand ms-5" href="#">Webkoushik</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
+      <div class="float-end">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 float-end">
+            <li class="nav-item">
+              <a class="nav-link active text-warning" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Contact</a>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Home Section -->
-    <section id="home">
-        <div class="container">
-            <h2>Welcome to My Portfolio</h2>
-            <p>Professional Product Description Writer</p>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a skilled product description writer with a passion for helping businesses succeed online. With experience in various e-commerce platforms, I provide detailed, SEO-friendly product descriptions that drive sales.</p>
-        </div>
-    </section>
+  <!-- Banner Sections -->
+  <div class="banner-container ">
+    <div class="banner-img banner-slideshow">
+      <img src="images/img-03.jpg" alt="Banner Image" >
+    </div>
+    <div class="banner-text">
+      <h1 class="text-white welcome-icon-top">
+        <span id="banner-span">Hello <i class="fa-solid fa-handshake"></i></span> 
+      </h1>     
+      <h3 class=" welcome-text-top" >Welcome to Webkoushik</h3> 
+      <h4 id="banner-heading">I am a <span ></span></h4>
+      <p>Passionate about creating beautiful and functional web applications. Let's build something amazing together.
+      </p>
+    </div>
+  </div>
+  
 
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <h2>My Services</h2>
-            <div class="services-grid">
-                <div class="service">
-                    <h3>Product Descriptions</h3>
-                    <p>Compelling and informative product descriptions that highlight key features and benefits.</p>
-                </div>
-                <div class="service">
-                    <h3>SEO Optimization</h3>
-                    <p>Using keywords effectively to ensure your product pages rank well on search engines.</p>
-                </div>
-                <div class="service">
-                    <h3>Content Strategy</h3>
-                    <p>Developing a content strategy that aligns with your business goals and target audience.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+  
 
-    <!-- Blog Section -->
-    <section id="blog">
-        <div class="container">
-            <h2>My Blog</h2>
-            <div class="blog-grid">
-                <div class="blog-post">
-                    <h3>Post Title 1</h3>
-                    <p>Summary of the blog post...</p>
-                    <a href="#">Read More</a>
-                </div>
-                <div class="blog-post">
-                    <h3>Post Title 2</h3>
-                    <p>Summary of the blog post...</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="container">
-            <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
-        </div>
-    </footer>
-    
-    <!-- Waterdrop Animation Container -->
-    <div class="waterdrop"></div>
 
-    <script src="js/scripts.js" defer></script>
+  <script src="js/scripts.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
+
 </html>
